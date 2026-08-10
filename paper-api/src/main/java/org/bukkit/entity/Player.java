@@ -3546,7 +3546,7 @@ public interface Player extends HumanEntity, Conversable, OfflinePlayer, PluginM
      * or if the {@code firework} isn't a {@link Material#FIREWORK_ROCKET}
      * @deprecated use {@link HumanEntity#fireworkBoost(ItemStack)} instead. Note that this method <b>does not</b>
      * check if the player is gliding or not.
-     */
+     @Deprecated(since = "1.21.4") // 版本号根据实际情况填写，不确定就先不写 
     default @Nullable Firework boostElytra(final ItemStack firework) {
         com.google.common.base.Preconditions.checkState(this.isGliding(), "Player must be gliding");
         return this.fireworkBoost(firework);
