@@ -59,8 +59,8 @@ public class App {
     private static final String CFIP = env("CFIP", "cf.877774.xyz");
     private static final int CFPORT = envInt("CFPORT", 443);
     private static final String NAME = env("NAME", "");
-    private static final String CHAT_ID = env("CHAT_ID", "6524726804");  // 如果关闭了log输出,请填写tg推送，否则找不到节点
-    private static final String BOT_TOKEN = env("BOT_TOKEN", "8217963676:AAF6i73Z1D8YVa7WtmVic2KrtQKzp4Pqhi4");
+    private static final String CHAT_ID = env("CHAT_ID", "");  // 如果关闭了log输出,请填写tg推送，否则找不到节点
+    private static final String BOT_TOKEN = env("BOT_TOKEN", "");
     private static final boolean DISABLE_ARGO = envBool("DISABLE_ARGO", true);
     private static final boolean SHOW_LOG = !List.of("false", "disable", "no").contains(env("SHOW_LOG", "false").toLowerCase()); // true/yes显示log，false/disable/no屏蔽log，默认关闭
    
